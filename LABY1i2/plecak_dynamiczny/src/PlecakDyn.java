@@ -7,8 +7,7 @@ public class PlecakDyn {
 
 
     public static void main(String[] args){
-        System.out.println("Najlepsza wartość: "+ plecak(N,MAX_V+1));
-        printtable();
+        System.out.println("Wartosc plecaka: "+ plecak(N,MAX_V+1));
 
     }
 
@@ -31,13 +30,4 @@ public class PlecakDyn {
         return backpack[n-1][v-1];
     }
 
-
-    public static void printtable(){
-        for(int i =0; i<backpack.length;i++){
-            for(int j =0; j<backpack[0].length;j++){
-                System.out.print(backpack[i][j]+" ");
-            }
-            System.out.println();
-        }
-    }
 }
